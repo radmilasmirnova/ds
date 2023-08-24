@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект гостиной</title>
+    <!--Нормализует стили-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+   <!--Подключаем собственные стили-->
+    <link rel="stylesheet" href="../style1.css">
+     <!--Подключаем шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!--Подключаем фавикон-->
+    <link rel="shortcut icon" tipe="img/x-icon" href="../images/Favikon.png">
+   <!--Подключаем иконки-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Подключаем бутстрап-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--На всякий случай js бутстрапа-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="pf_sp">
+    <div class="container">
+        <div class="title">Проект гостиной</div>
+<!--        <img src="../images/foto4.png" alt="Проект гостиной"> <br>-->
+
+  <!--Слайдер-->
+
+<div class="slider">
+  <div class="photos">
+    <img class="slider-image show"  src="../images/foto5.png" alt="" srcset="">
+    <img class="slider-image" src="../images/foto6.png" alt="" srcset="">
+    <img class="slider-image" src="../images/foto8.png" alt="" srcset="">
+
+   </div>
+   <div class="actions">
+    <input type="button" class="prev" value="Назад">
+    <input type="button" class="next" value="Вперед">
+   </div>
+</div>
+
+  <!--Выпадающее меню-->
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"> Выбрать проект</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Проект S</a>
+    <a href="#">Проект M</a>
+    <a href="#">Проект L</a>
+  </div>
+</div>
+<div class="text_p2">
+  Мы команда профессионалов, которые могут произвести любую мебель для вашего проекта, а так же найти производственное решение любой задумки. Наша основная цель-реализовать самые смелые задумки, и делать это качественно и аккуратно. В качестве материалов мы используем натуральные - стекло, дерево, бетон, камень, металл и эпоксидную смолу.
+ </div>
+
+<!--обратная связь-->
+<form id="feedback-form">
+  <div>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" required></textarea>
+  </div>
+  <button type="submit" id="submit-button">Отправить</button>
+</form>
+
+
+
+<!--footer-->
+
+<div class="footer">
+   <div class="container">
+        <div class="our_row">
+             <!--Footer left-->
+            <div class="c-4">
+                <p class="ft_name">Лев Крылов</p>
+                <p>Воплощаю в жизнь ваши проекты</p>
+            </div>
+             <!--Footer center-->
+            <div class="c-4">
+                <p class="ft_soc">Где меня искать</p>
+                <p class="ft_soc_icon">
+                <a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-youtube"></i></a></p>
+            </div>
+            <!--Footer r-->
+            <div class="c-4">
+              <div><a href=".." class="button" target="_blank">Написать</a></div>
+              <p>Отвечу на любые ваши вопросы</p>
+            </div>
+        </div>
+   </div>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
